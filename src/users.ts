@@ -21,7 +21,7 @@ export function getUsersData(): User[] {
 
   return apiResponse
   .map((item) => {
-    if (typeof item === "object" && item != null && "name" in ite
+    if (typeof item === "object" && item != null && "name" in item
  && "age" in item) {
       const user = item as {name: unknown, age: unknown};
       let age: number | null = null; 
