@@ -9,7 +9,7 @@ export const apiResponse: unknown = [
 function isValidUser(obj: unknown): obj is User {
   if (typeof obj === "object" && obj != null && "name" in obj && "age" in obj) {
     const user = obj as {name: unknown, age: unknown};
-    return typeof obj.name === string && typeof obj.age === number;
+    return typeof obj.name === "string" && typeof obj.age === "number";
   }
   else {
     return false;
