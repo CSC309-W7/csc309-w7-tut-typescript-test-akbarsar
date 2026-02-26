@@ -13,6 +13,7 @@ function isValidUser(obj: unknown): obj is User {
   }
   else {
     return false;
+  }
 }
 
 export function getUsersData(): User[] {
