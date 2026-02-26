@@ -36,7 +36,7 @@ export function getUsersData(): User[] {
         age = user.age;
       }
 
-      if (typeof user.age === "string" && age !== null) {
+      if (typeof user.name === "string" && age !== null) {
         return { name: user.name, age: age };
       }
     }
