@@ -41,7 +41,7 @@ export function getUsersData(): User[] {
       }
     }
     return null;
-  }).filter((user): user is User => u !== null);
+  }).filter((user): user is User => user !== null);
 }
 
 export function formatAges(users: User[]): string[] {
