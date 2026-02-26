@@ -17,7 +17,7 @@ function isValidUser(obj: unknown): obj is User {
 }
 
 export function getUsersData(): User[] {
-  if (!Array.isArray(apiResponse) return [];
+  if (!Array.isArray(apiResponse)) return [];
 
   return apiResponse
   .map((item) => {
